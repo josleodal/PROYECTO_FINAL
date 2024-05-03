@@ -22,7 +22,7 @@ export const SocketContextProvider = ({ children }) => {
 	useEffect(() => {
 		if (authUser) {
 			// Establece la conexión del socket con el servidor
-			const socket = io("http://localhost:3000/", {
+			const socket = io("https://proyecto-final-vnyh.onrender.com", {
 				query: {
 					userId: authUser._id, // Envía el ID de usuario al servidor para identificar al usuario
 				},
