@@ -31,7 +31,7 @@ app.use(express.static(path.join(__dirname, "/frontend/dist")));
 
 // Ruta de comodín para servir el archivo index.html desde el directorio de distribución en cualquier ruta no definida previamente
 app.get("*", (req, res) => {
-  res.sendFile(path.join(process.cwd(),'frontend','dist','index.html'));
+  res.sendFile(path.join(__dirname, "frontend", "dist", "index.html"));
  
 });
 
