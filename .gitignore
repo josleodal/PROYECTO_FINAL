@@ -1,0 +1,23 @@
+# Archivos generados por Node.js
+node_modules/
+
+# Archivos generados por npm
+package-lock.json
+
+# Archivos generados por macOS
+.DS_Store
+
+# Archivos generados por tu editor de código
+.vscode/
+.idea/
+
+# Archivos generados por tu sistema operativo
+*.log
+npm-debug.log*
+
+# Archivos generados por el entorno de desarrollo local
+
+
+# Archivos generados por sistemas de construcción
+/build/
+/dist/
