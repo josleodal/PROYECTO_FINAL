@@ -18,6 +18,4 @@ npm-debug.log*
 # Archivos generados por el entorno de desarrollo local
 
 
-# Archivos generados por sistemas de construcción
-/build/
-/dist/
+
