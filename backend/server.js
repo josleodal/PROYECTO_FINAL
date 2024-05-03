@@ -27,13 +27,12 @@ app.use("/api/messages", messageRoutes);
 app.use("/api/users", userRoutes);
 
 // Configuración de Express para servir archivos estáticos desde el directorio de distribución del frontend
-app.use(express.static('/opt/render/project/src/frontend/dist'));
-
-
+app.use(express.static(path.join(__dirname, "/frontend/dist")));
 
 // Ruta de comodín para servir el archivo index.html desde el directorio de distribución en cualquier ruta no definida previamente
 app.get("*", (req, res) => {
-  res.sendFile('/opt/render/project/src/frontend/dist/index.html');
+  res.sendFile(path.join(process.cwd(),'frontend','dist','index.html'));
+ 
 });
 
 // Inicio del servidor en el puerto especificado y conexión a MongoDB
