@@ -49,14 +49,14 @@ JWT_SECRET=...
 NODE_ENV=...
 ```
 
-### Build the app
+### Usar npm install para dependencias
 
-```shell
-npm run build
-```
 
-### Start the app
+npm install
 
-```shell
+
+### Usar npm start para activar 
+
+
 npm start
-```
+
