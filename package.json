@@ -6,8 +6,9 @@
   "scripts": {
     "server": "node backend/server.js",
     "start": "node backend/server.js",
-    "build":"npm install && npm install --prefix frontend"
+    "install": "npm install --prefix frontend"
   },
+  
   "type": "module",
   "keywords": [],
   "author": "",
