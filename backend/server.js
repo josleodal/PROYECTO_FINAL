@@ -38,5 +38,5 @@ app.get("*", (req, res) => {
 // Inicio del servidor en el puerto especificado y conexión a MongoDB
 server.listen(PORT, () => {
   connectToMongoDB(process.env.MONGO_DB_URI); // Conexión a la base de datos MongoDB
-  console.log(`Server Running on port ${PORT}`);
+  console.log(`Servidor sonando en el puerto ${PORT}`);
 });
