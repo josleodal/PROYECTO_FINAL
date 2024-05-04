@@ -39,7 +39,7 @@ export default useLogin; // Exporta el hook useLogin
 
 function handleInputErrors(username, password) { // Define una función para manejar errores de entrada
 	if (!username || !password) { // Comprueba si se han proporcionado tanto el nombre de usuario como la contraseña
-		toast.error("Please fill in all fields"); // Muestra un mensaje de error si alguno de los campos está vacío
+		toast.error("Rellene todos los campos"); // Muestra un mensaje de error si alguno de los campos está vacío
 		return false; // Retorna false para indicar que hay errores de entrada
 	}
 

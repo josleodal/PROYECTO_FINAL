@@ -11,7 +11,7 @@ export const getUsersForSidebar = async (req, res) => {
 		// Devuelve la lista de usuarios filtrados en la respuesta
 		res.status(200).json(filteredUsers);
 	} catch (error) {
-		console.error("Error in getUsersForSidebar: ", error.message); // Registra cualquier error en la consola
+		console.error("Error en getUsersForSidebar: ", error.message); // Registra cualquier error en la consola
 		res.status(500).json({ error: "Internal server error" }); // Devuelve un error 500 si hay un error interno del servidor
 	}
 };
